@@ -1,0 +1,9 @@
+<resources>
+    <string name="nome_usuario">ExApp</string>
+    <string name="app_name">ExApp</string>
+    <string name="mensagem">ExApp</string>
+    <string name="mensagem_2">ExApp</string>
+    <string name="player">Jogador: %s</string>
+    <string name="vencedor">%s venceu!!!</string>
+    <string name="velha">Deu velha!!</string>
+</resources>

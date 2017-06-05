@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.anderson.exapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".imc"/>
+        <activity android:name=".jokenpo_main"/>
+        <activity android:name=".MainVelha"/>
+        <activity android:name=".splash"> </activity>
+        <activity android:name=".splash_2"> </activity>
+        <activity android:name=".MainActivity_2"> </activity>
+        <receiver android:name=".conectado">
+        <intent-filter>
+            <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+        </intent-filter>
+        </receiver>
+        <service
+            android:name=".notificacao_1"
+            android:exported="false">
+        </service>
+        <service android:name=".notificacao_2"
+            android:exported="false">
+        </service>
+
+    </application>
+
+
+</manifest>

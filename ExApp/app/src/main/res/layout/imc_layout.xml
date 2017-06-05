@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="#fad0a4">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageView
+            android:src="@drawable/calculadora_imc"
+            android:id="@+id/imc_image"
+            android:layout_width="196dp"
+            android:layout_height="200dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <EditText
+            android:fontFamily="monospace"
+            android:id="@+id/peso"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:hint="Peso"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:fontFamily="monospace"
+            android:id="@+id/altura"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:hint="Altura"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="#ffb56b"
+            android:id="@+id/btn_calcular"
+            android:text="Calcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffb366">
+        <TextView
+            android:paddingTop="50dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="Resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/resultado"
+            android:textAlignment="center"
+            android:fontFamily="monospace"
+            android:layout_marginTop="20dp"
+            android:textSize="24sp"
+            android:text=" "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
